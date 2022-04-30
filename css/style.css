@@ -1,0 +1,182 @@
+/* &display=swap */
+@import "null.css";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Roboto:wght@700&family=Taviraj&display=swap');
+
+/* ================================================================ */
+.wrapper {
+	min-height: 100%;
+	/*overflow: hidden;*/
+	background-color: rgba(85, 82, 255, 1);
+	padding: 10px 0 20px 0;
+}
+/* ================================================================ */
+body {
+	font-family: "Raleway", Arial, Helvetica, sans-serif;
+	font-weight: 700;
+line-height: 26px;
+}
+
+.content{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+h1.header__titel {
+	line-height: 150%;
+	font-size: 1.5rem;
+	font-weight:900;
+	font-size: calc(30px + (80 - 30)*((100vw - 320px) / (1200 - 320)));
+
+}
+
+.main__container {
+	padding: 2em 2em;
+	background-color: rgba(252, 197, 38, 1);
+	border-radius: 12px;
+	box-shadow: 20px 20px 0px 0px rgba(28, 27, 85, 0.35);
+}
+
+.block-row section{
+	background: #FFFFFF;
+	border: 4px solid #000000;
+	border-radius: 12px;
+	padding: 1em;
+}
+.about{
+	box-shadow: 20px 20px 0px 0px #3DC39B;
+	margin: 0 0 2rem 0;
+}
+.my-goals{
+	box-shadow: 20px 20px 0px 0px rgba(255, 119, 168, 1);
+	margin: 0 0 2rem 0;
+}
+.my-goals__list{
+	padding: 15px;
+}
+.block-titel{
+font-size: 2rem;
+font-weight: 700;
+line-height: 200%;
+}
+
+.block-row{
+	display: flex;
+	gap: 10%;
+}
+.row-left{
+	flex: 0 1 50%;
+
+}
+.row-right{
+	flex: 0 1 50%;
+}
+
+.row-right section:not(:last-child){
+	margin: 0 0 0.5rem 0;
+}
+
+.student-name__container{
+	display: flex;
+	gap: 5%;
+}
+.picture{
+	max-width: 400px;
+	border-radius: 15px;
+	box-shadow: 20px 20px 0px 0px rgba(135, 128, 255, 1);
+
+}
+.student-name__list{
+	list-style: none;
+	display:flex;
+flex-direction:column;
+justify-content:center
+}
+.student-name__list li:not(:last-child) {
+margin: 0 0 1rem 0;
+list-style: none;
+}
+.student-name{
+	margin: 0 0 2em 0;
+}
+
+.student-name__title{
+	font-weight: 900;
+	line-height: 100%;
+	font-size: calc(1.6rem + (32 - 26)*((100vw - 45rem) / (1200 - 720)));
+}
+.student-name__subtitle{
+font-weight: 700;
+line-height: 100%;
+font-size: calc(1.6rem + (32 - 26)*((100vw - 45rem) / (1200 - 720)));
+}
+
+
+@media (max-width: 720px) {
+	.student-name__container{
+		flex-direction: column;
+		gap: 30px;
+	}
+	.picture{
+		max-width: 100%;
+	}
+	.block-row{
+		flex-direction: column;
+	}
+	.main__container{
+		padding: 1em 2em 1em 1em;
+	}
+}
+
+.titel{
+padding: 0 0 20px 0;
+font-weight: 900;
+line-height: 120%;
+}
+.table{
+	width: 100%;
+	border-collapse:collapse;
+	padding: 5px;
+}
+td{
+	padding: 5px;
+}
+
+.table-titel td{
+font-weight: 900;
+line-height: 120%;
+border-bottom: 3px solid #000000;
+padding: 10px;
+}
+
+.socials__links{
+	max-width: 250px;
+display: flex;
+justify-content: space-around;
+margin: 0 auto;
+}
+
+.link{
+	display: block;
+	width: 30px;
+	height: 30px;
+}
+.link:hover{
+	transform: scale(1.5);
+	transition-duration: 300ms ;
+	filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+.telegram {
+	background: url(../img/telegram.svg) center/cover no-repeat;
+}
+
+.instagram {
+	background: url(../img/instagram.svg) center/cover no-repeat;
+}
+.vk{
+	background: url(../img/vkontakte.svg) center/cover no-repeat;
+}
+.github{
+	background: url(../img/github.svg) center/cover no-repeat;
+}
+
+
